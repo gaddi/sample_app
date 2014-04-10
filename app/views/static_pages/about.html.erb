@@ -1,3 +1,9 @@
-﻿<h1>chnunim about page</h1>
-<p>מה זה חנונים מה זה חנונים</p>
-<p>what is chnunim?</p>
+<% provide(:title, 'About') %>
+	<h1>chnunim</h1>
+	<h1>chnunim <%= yield(:title) %> page</h1>
+	<p>what is chnunim?</p>
+	<p>
+	  This is the <%= yield(:title) %> page for the
+	  <a href="www.chnunim.com">chnunim page</a>
+	  and sample application.
+	</p>

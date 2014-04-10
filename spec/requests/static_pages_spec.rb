@@ -14,8 +14,8 @@ describe "StaticPages" do
   describe "Help page" do
     it "should show 'help'" do
       visit '/static_pages/help'
-      expect(page).to have_content('help')
       expect(page).to have_content('chnunim')
+      expect(page).to have_title("Help")
     end
   end
   
@@ -23,6 +23,7 @@ describe "StaticPages" do
     it "should show 'about info'" do
       visit '/static_pages/about'
       expect(page).to have_content('what is chnunim')
+      expect(page).to have_title("Ruby on Rails Tutorial Sample App | About")
     end
   end
 end
